@@ -14,7 +14,7 @@ Enough jibber jabber. Allow me to introduce my plugin.
 
 As well as being new to posting on gh I am also pretty new to neovim. However after working with it for several months now it has officially become my editor of choice and I have been using it extensively when working on my next game.
 
-I love neovim, it's features and community. Despite this there is one thing that I used to do all the time in vscode that I just haven't been able to find a good replacement for in neovim. The ability to create a gh issue directly from a TODO comment then automatically add the issue number to the comment. That's what this plugin does. Even though I work solo I rely heavily on gh issues and projects to manage my work and being able to create issues quickly from my editor and have theme tied to a specific line via an issue number is essential for my work flow.
+I love neovim, it's features and community. Despite this there is one thing that I used to do all the time in vscode that I just haven't been able to find a good replacement for in neovim. The ability to create a gh issue directly from a TODO comment then automatically add the issue number to the comment. That's what this plugin does. Even though I work solo I rely heavily on gh issues and projects to manage my work and being able to create issues quickly from my editor and have them tied to a specific line via an issue number is essential for my workflow.
 
 Anyhoo I created this plugin for myself and if I decide it needs some new features I will add them also for myself.
 
