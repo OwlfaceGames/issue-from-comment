@@ -16,6 +16,8 @@ As well as being new to posting on gh I am also pretty new to neovim. However af
 
 I love neovim, it's features and community. Despite this there is one thing that I used to do all the time in vscode that I just haven't been able to find a good replacement for in neovim. The ability to create a gh issue directly from a TODO comment then automatically add the issue number to the comment. That's what this plugin does. Even though I work solo I rely heavily on gh issues and projects to manage my work and being able to create issues quickly from my editor and have them tied to a specific line via an issue number is essential for my workflow.
 
+Everything this plugin does can be mapped to a couple of keystrokes.
+
 Anyhoo I created this plugin for myself and if I decide it needs some new features I will add them also for myself.
 
 So far I am absolutely loving using it so I figured why not share it and see if other people get something out of it too.
@@ -34,6 +36,7 @@ Nick <3
 - Works with multiple comment styles (//, #, --)
 - Automatically cleans up TODO/FIXME prefixes
 - Only keeps text after colons for clear issue titles
+- Custom keybindings for opening the issue buffer, closing the buffer and creating the issue
 
 ## Demo
 
