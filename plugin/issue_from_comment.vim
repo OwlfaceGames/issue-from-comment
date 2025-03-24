@@ -1,7 +1,7 @@
 " issue_from_comment.vim - Create GitHub issues from code comments
-" Maintainer: Your Name <your.email@example.com>
+" Maintainer: OwlfaceGames
 " Version: 0.1.0
-" Repository: https://github.com/OwlfaceGames/issue-from-comment
+" Repository: https://github.com/OwlfaceGames/issue-from-comment.nvim
 
 " Prevent loading the plugin multiple times
 if exists('g:loaded_issue_from_comment')
