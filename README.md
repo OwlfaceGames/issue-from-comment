@@ -1,5 +1,5 @@
 
-# issue-from-comment
+# Issue From Comment
 
 A Neovim plugin that allows you to create GitHub issues directly from code comments. Simply position your cursor on a comment line, run the command, and the plugin will extract the comment text as an issue title, open a buffer to edit details, create the issue, and update the original comment with the issue number.
 
@@ -253,26 +253,8 @@ If you encounter issues, you can enable more detailed error messages:
 vim.g.issue_from_comment_debug = true
 ```
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Acknowledgements
-
-- [GitHub API Documentation](https://docs.github.com/en/rest)
-- Inspired by tools like [todo.txt](http://todotxt.org/) and GitHub's own issue creation
-
----
-
-Created with ❤️ by [Your Name](https://github.com/yourusername)
 
