@@ -1,4 +1,4 @@
-issue-from-comment
+# Issue From Comment
 A Neovim plugin that allows you to create GitHub issues directly from code comments. Simply position your cursor on a comment line, run the command, and the plugin will extract the comment text as an issue title, open a buffer to edit details, create the issue, and update the original comment with the issue number.
 
 Features
