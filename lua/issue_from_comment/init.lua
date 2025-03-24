@@ -8,6 +8,8 @@ M.config = {
   github_repo = nil,                        -- Set this in your config
   default_labels = {},                      -- Default labels for issues
   default_assignees = {},                   -- Default assignees for issues
+  create_key = '<Leader>gc',                -- Key to create the issue from buffer
+  cancel_key = 'q',                         -- Key to cancel and close the buffer
 }
 
 -- Set up the plugin with user config
@@ -76,6 +78,10 @@ function M.open_issue_buffer(title, original_line)
     default_assignees = table.concat(M.config.default_assignees, ", ")
   end
 
+  -- Get the configuration for the create and cancel keys
+  local create_key = M.config.create_key or '<Leader>gc'
+  local cancel_key = M.config.cancel_key or 'q'
+
   -- Set buffer content
   local lines = {
     "# GitHub Issue Creation",
@@ -92,18 +98,18 @@ function M.open_issue_buffer(title, original_line)
     "## Assignees (comma-separated)",
     default_assignees or "<!-- e.g. username1, username2 -->",
     "",
-    "<!-- Press <Leader>gc to create the issue or q to cancel -->"
+    string.format("<!-- Press %s to create the issue or %s to cancel -->", create_key, cancel_key)
   }
 
   vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, lines)
 
   -- Set buffer local mappings
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>gc',
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', create_key,
     string.format(":lua require('issue_from_comment').submit_issue(%d, %d)<CR>",
       bufnr, vim.api.nvim_get_current_buf()),
     { noremap = true, silent = true })
 
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'q',
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', cancel_key,
     string.format(":lua vim.api.nvim_buf_delete(%d, {force = true})<CR>", bufnr),
     { noremap = true, silent = true })
 
