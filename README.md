@@ -267,9 +267,7 @@ If you encounter issues, you can enable more detailed error messages:
 ```lua
 vim.g.issue_from_comment_debug = true
 ```
-
-# Support
-
+## Support
 If you like my work, consider supporting me through [GitHub Sponsors](https://github.com/sponsors/OwlfaceGames)🩷
 
 
