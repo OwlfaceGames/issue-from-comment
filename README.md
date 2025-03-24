@@ -33,13 +33,18 @@ A Neovim plugin that allows you to create GitHub issues directly from code comme
 
 ```lua
 return {
-  "yourusername/issue-from-comment",
+  "OwlfaceGames/issue-from-comment",
   config = function()
     require("issue_from_comment").setup({
       github_owner = "your-github-username", -- Owner of the target repo
       github_repo = "your-repository-name",  -- Name of the target repo
       default_labels = {"bug", "enhancement"}, -- Optional default labels
-      -- Additional configuration options
+      default_assignees = {"your-username", "colleague-username"}, -- Optional default assignees
+      create_key = '<Leader>gc', -- Optional custom key to create the issue
+      cancel_key = 'q',          -- Optional custom key to cancel
+      
+      -- Authentication (one of these is required)
+      github_token = os.getenv("GITHUB_TOKEN"),  -- GitHub token (default: from env var)
     })
     
     -- Optional keymapping to trigger issue creation
@@ -52,12 +57,18 @@ return {
 
 ```lua
 use {
-  'yourusername/issue-from-comment',
+  'OwlfaceGames/issue-from-comment',
   config = function()
     require('issue_from_comment').setup({
       github_owner = "your-github-username",
       github_repo = "your-repository-name",
       default_labels = {"bug", "enhancement"},
+      default_assignees = {"your-username", "colleague-username"}, -- Optional default assignees
+      create_key = '<Leader>gc', -- Optional custom key to create the issue
+      cancel_key = 'q',          -- Optional custom key to cancel
+
+      -- Authentication (one of these is required)
+      github_token = os.getenv("GITHUB_TOKEN"),  -- GitHub token (default: from env var)
     })
     
     -- Optional keymapping
@@ -70,7 +81,7 @@ use {
 
 ```vim
 " In init.vim or .vimrc
-Plug 'yourusername/issue-from-comment'
+Plug 'OwlfaceGames/issue-from-comment'
 
 " Then in your config:
 lua << EOF
@@ -78,6 +89,12 @@ require('issue_from_comment').setup({
   github_owner = "your-github-username",
   github_repo = "your-repository-name",
   default_labels = {"bug", "enhancement"},
+  default_assignees = {"your-username", "colleague-username"}, -- Optional default assignees
+  create_key = '<Leader>gc', -- Optional custom key to create the issue
+  cancel_key = 'q',          -- Optional custom key to cancel
+
+  -- Authentication (one of these is required)
+  github_token = os.getenv("GITHUB_TOKEN"),  -- GitHub token (default: from env var)
 })
 
 -- Optional keymapping
@@ -92,7 +109,7 @@ EOF
 mkdir -p ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment
 
 # Clone the repository
-git clone https://github.com/yourusername/issue-from-comment.git \
+git clone https://github.com/OwlfaceGames/issue-from-comment.git \
   ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment
 
 # Then in your init.lua:
@@ -242,8 +259,6 @@ Use the create key (default: `<Leader>gc`) to submit the issue or the cancel key
    - Confirm that you have permission to create issues in the target repository
    - Verify the owner and repo name are correctly specified in your config
 
-3. **API Limitations**:
-   - Be aware of GitHub API rate limits (5,000 requests per hour for authenticated users)
 
 ### Debugging
 
