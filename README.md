@@ -33,7 +33,7 @@ A Neovim plugin that allows you to create GitHub issues directly from code comme
 
 ```lua
 return {
-  "OwlfaceGames/issue-from-comment",
+  "OwlfaceGames/issue-from-comment.nvim",
   config = function()
     require("issue_from_comment").setup({
       github_owner = "your-github-username", -- Owner of the target repo
@@ -57,7 +57,7 @@ return {
 
 ```lua
 use {
-  'OwlfaceGames/issue-from-comment',
+  'OwlfaceGames/issue-from-comment.nvim',
   config = function()
     require('issue_from_comment').setup({
       github_owner = "your-github-username",
@@ -81,7 +81,7 @@ use {
 
 ```vim
 " In init.vim or .vimrc
-Plug 'OwlfaceGames/issue-from-comment'
+Plug 'OwlfaceGames/issue-from-comment.nvim'
 
 " Then in your config:
 lua << EOF
@@ -106,11 +106,11 @@ EOF
 
 ```bash
 # Create the plugin directory
-mkdir -p ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment
+mkdir -p ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment.nvim
 
 # Clone the repository
-git clone https://github.com/OwlfaceGames/issue-from-comment.git \
-  ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment
+git clone https://github.com/OwlfaceGames/issue-from-comment.vim.git \
+  ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment.nvim
 
 # Then in your init.lua:
 require('issue_from_comment').setup({
