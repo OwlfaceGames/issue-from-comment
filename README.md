@@ -5,6 +5,23 @@ A Neovim plugin that allows you to create GitHub issues directly from code comme
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+## Introduction
+Hi, I'm Nick. I've been making games on and off for 10+ years. However I'm actually kinda new to posting things publicly on github as in the gamedev world to be honest we don't really do that. Anyway excuse me if I fall short with any gh etiquette.
+
+Enough jibber jabber. Allow me to introduce my plugin.
+
+As well as being new to posting on gh I am also pretty new to neovim. However after working with it for several months now it has officially become my editor of choice and I have been usiing it extensively when working on my next game.
+
+I love neovim, it's features and community. Despite this there is one thing that I used to do all the time in vscode that I just haven't been able to find a good replacement for in neovim. The ability to create a gh issue directly from a TODO comment then automatically add the issue number to the comment. That's what this plugin does. Even though I work solo I rely heavily on gh issues and projects to manage my work and being able to create issues quickly from my editor and have theme tied to a specific line via an issue number is essential for my work flow.
+
+Anyhoo I created this plugin for myself and if I decide it needs some new features I will add them also for myself.
+
+So far I am absolutely loving using it so I figured why not share it and see if other people get something out of it too.
+
+Enjoy,
+
+Nick <3
+
 ## Features
 
 - Create GitHub issues without leaving Neovim
