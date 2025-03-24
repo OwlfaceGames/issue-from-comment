@@ -109,7 +109,7 @@ EOF
 mkdir -p ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment.nvim
 
 # Clone the repository
-git clone https://github.com/OwlfaceGames/issue-from-comment.vim.git \
+git clone https://github.com/OwlfaceGames/issue-from-comment.nvim.git \
   ~/.local/share/nvim/site/pack/plugins/start/issue-from-comment.nvim
 
 # Then in your init.lua:
