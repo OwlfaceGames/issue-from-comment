@@ -18,7 +18,7 @@ A Neovim plugin that allows you to create GitHub issues directly from code comme
 
 ## Demo
 
-![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHYwcDlqMnV2c2JrbWc5ZDRzbzRnbXh0ZzM0N3F0MWxxdWVycHhiNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0iBVNDLapAYlaPQvRn/giphy.gif)
+![](https://github.com/OwlfaceGames/issue-from-comment/blob/master/issue%20from%20comment%20example.gif?raw=true)
 
 ## Requirements
 
