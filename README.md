@@ -74,7 +74,7 @@ return {
   end,
 }
 ```
-**INPORTANT:** Note that this is also where you create your custom keybinds and defaults.
+**IMPORTANT:** Note that this is also where you create your custom keybinds and defaults.
 If you don't want to set a default keybind or label etc. just omit it by deleting the line.
 
 Should also be be noted that "github_owner" and "github_repo" refers to the repo where you want to create issues.
