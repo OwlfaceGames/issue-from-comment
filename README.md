@@ -79,7 +79,7 @@ If you don't want to set a default keybind or label etc. just omit it by deletin
 
 Should also be be noted that "github_owner" and "github_repo" refers to the repo where you want to create issues.
 
-Also if you dont have an env var for your gh token you can just write it as a strind instead.
+Also if you dont have an env var for your gh token you can just write it as a string instead.
 
 ### Using packer.nvim
 
