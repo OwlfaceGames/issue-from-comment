@@ -26,6 +26,13 @@ Enjoy,
 
 Nick <3
 
+## Say Hi
+If you end up using the plugin please [say hi](https://github.com/OwlfaceGames/issue-from-comment.nvim/discussions/2) in the discussion thread or simply reply to [this poll](https://github.com/OwlfaceGames/issue-from-comment.nvim/discussions/3).
+
+With there being no way to know how many people (if any) use the plugin this is the only way other than stars I can really gauge interest.
+
+Star are of course always appreciated too.
+
 ## Features
 
 - Create GitHub issues without leaving Neovim
