@@ -31,7 +31,7 @@ If you end up using the plugin please [say hi](https://github.com/OwlfaceGames/i
 
 With there being no way to know how many people (if any) use the plugin this is the only way other than stars I can really gauge interest.
 
-Star are of course always appreciated too.
+Stars are of course always appreciated too.
 
 ## Features
 
