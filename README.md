@@ -33,6 +33,10 @@ With there being no way to know how many people (if any) use the plugin this is 
 
 Stars are of course always appreciated too.
 
+Also if you'd rather let me know you're using the plugin/give me feedback via the discord I created a discord server for that very purpose.
+
+You can [join the discord here](https://discord.gg/974zmDPpg7).
+
 ## Features
 
 - Create GitHub issues without leaving Neovim
