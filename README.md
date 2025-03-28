@@ -310,4 +310,5 @@ If you like my work, consider supporting me through [GitHub Sponsors](https://gi
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
